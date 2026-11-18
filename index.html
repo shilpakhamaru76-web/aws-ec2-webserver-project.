@@ -1,0 +1,433 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CloudVerse | Cloud & DevOps Portfolio</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #071426;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background: #0b1c32;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #38bdf8;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+.hero {
+    min-height: 88vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 70px 8%;
+    gap: 40px;
+    background:
+    radial-gradient(circle at 80% 30%, #123d66 0%, transparent 40%);
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.tag {
+    color: #38bdf8;
+    letter-spacing: 3px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: clamp(38px, 6vw, 65px);
+    line-height: 1.15;
+    margin: 20px 0;
+}
+
+.hero h1 span {
+    color: #38bdf8;
+}
+
+.hero p {
+    color: #b7c7d9;
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background: #0ea5e9;
+    padding: 13px 26px;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #0284c7;
+    transform: translateY(-3px);
+}
+
+.cloud-art {
+    font-size: 150px;
+    text-align: center;
+    filter: drop-shadow(0 0 30px #0ea5e9);
+    animation: float 3s ease-in-out infinite;
+}
+
+.cloud-art p {
+    font-size: 15px;
+    color: #38bdf8;
+    letter-spacing: 3px;
+}
+
+@keyframes float {
+    0%,100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+section {
+    padding: 85px 8%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    color: #94a3b8;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.about {
+    background: #0b1c32;
+}
+
+.about-content {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+    color: #bdcbdc;
+    font-size: 17px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+}
+
+.card {
+    background: #10243d;
+    padding: 30px;
+    border: 1px solid #1e4263;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: #38bdf8;
+}
+
+.card .icon {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: #38bdf8;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #aabbd0;
+    font-size: 14px;
+}
+
+.project-box {
+    background: linear-gradient(135deg, #103354, #10243d);
+    padding: 35px;
+    border-radius: 18px;
+    border: 1px solid #25638d;
+    max-width: 900px;
+    margin: auto;
+}
+
+.project-box h3 {
+    color: #38bdf8;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.project-box p {
+    color: #cbd5e1;
+    margin-bottom: 15px;
+}
+
+.project-box ul {
+    padding-left: 20px;
+    color: #cbd5e1;
+}
+
+.contact {
+    background: #0b1c32;
+    text-align: center;
+}
+
+.contact p {
+    color: #b7c7d9;
+    margin: 15px 0 25px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #06101e;
+    color: #8295aa;
+    font-size: 13px;
+}
+
+@media(max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0 7px;
+        font-size: 12px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .cloud-art {
+        font-size: 100px;
+    }
+
+    section {
+        padding: 65px 6%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">☁ Cloud project </div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Cloud Skills</a>
+        <a href="#project">Project</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HERO SECTION -->
+
+<div class="hero" id="home">
+
+    <div class="hero-content">
+        <div class="tag">WELCOME TO MY CLOUD WORLD</div>
+
+        <h1>
+            Building the Future
+            with <span>Cloud Technology.</span>
+        </h1>
+
+        <p>
+            Exploring Cloud Computing, AWS and DevOps.
+            Learning to build scalable, secure and
+            reliable cloud infrastructure.
+        </p>
+
+        <a href="#project" class="btn">
+            Explore My Project →
+        </a>
+    </div>
+
+    <div class="cloud-art">
+        ☁️
+        <p>AWS CLOUD</p>
+    </div>
+
+</div>
+
+<!-- ABOUT SECTION -->
+
+<section class="about" id="about">
+
+    <h2 class="section-title">About Cloud Computing</h2>
+
+    <p class="subtitle">
+        Powering applications through cloud technology
+    </p>
+
+    <div class="about-content">
+        Cloud computing provides on-demand access to
+        computing resources such as servers, storage,
+        databases and networking over the internet.
+
+        <br><br>
+
+        This website is created as a practical learning
+        project to understand static website hosting,
+        cloud infrastructure and web deployment.
+    </div>
+
+</section>
+
+<!-- CLOUD SKILLS -->
+
+<section id="services">
+
+    <h2 class="section-title">My Cloud Technology Stack</h2>
+
+    <p class="subtitle">
+        Technologies I am learning and exploring
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="icon">☁️</div>
+            <h3>AWS Cloud</h3>
+            <p>
+                Learning EC2, S3, IAM, VPC,
+                CloudWatch and cloud infrastructure.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🐧</div>
+            <h3>Linux</h3>
+            <p>
+                Working with Linux commands,
+                server administration and shell scripting.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🐳</div>
+            <h3>Docker</h3>
+            <p>
+                Exploring containerization and
+                application deployment.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">⚙️</div>
+            <h3>DevOps</h3>
+            <p>
+                Learning Jenkins, Git, GitHub,
+                Terraform and CI/CD automation.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- PROJECT SECTION -->
+
+<section id="project" class="about">
+
+    <h2 class="section-title">Featured Project</h2>
+
+    <p class="subtitle">
+        My practical Cloud Computing project
+    </p>
+
+    <div class="project-box">
+
+        <h3>☁ AWS Static Website Hosting</h3>
+
+        <p>
+            Designed and developed a responsive
+            cloud-themed website to practise
+            static website hosting using Amazon S3.
+        </p>
+
+        <ul>
+            <li>Created a responsive website using HTML and CSS.</li>
+            <li>Prepared website files for Amazon S3 hosting.</li>
+            <li>Explored static website hosting configuration.</li>
+            <li>Learned about public access and bucket permissions.</li>
+            <li>Studied HTTP requests and website delivery.</li>
+        </ul>
+
+        <br>
+
+        <p><strong>Technologies:</strong>
+            AWS, IAM, AWS S3, Cloud Computing
+        </p>
+
+    </div>
+
+</section>
+
+<!-- CONTACT SECTION -->
+
+<section class="contact" id="contact">
+
+    <h2 class="section-title">Let's Connect</h2>
+
+    <p>
+        Interested in Cloud Computing and DevOps.
+        Always learning and building new projects.
+    </p>
+
+    <a href="mail:shilpakhamaru76@gmail.com" class="btn">
+        Contact Me →
+    </a>
+
+</section>
+
+</body>
+</html>
