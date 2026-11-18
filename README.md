@@ -1,4 +1,5 @@
 
+
 # AWS EC2 Web Server Deployment Project
 
 ## Project Overview
@@ -48,3 +49,5 @@ using the Nginx web server on Ubuntu Linux.
 - Configure AWS Security Groups
 - Add HTTPS using SSL/TLS
 - Automate deployment using Jenkins
+=======
+# aws-ec2-webserver-project.
